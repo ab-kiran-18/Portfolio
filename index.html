@@ -10,37 +10,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600&family=Roboto:wght@700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Poppins:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/4b37ce58b9.js" crossorigin="anonymous"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Poppins:wght@600&family=Roboto:wght@700&display=swap"
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arima&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
@@ -50,10 +28,31 @@
 
 <body>
 
+    <script>
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky_navbar")
+            } else {
+                navbar.classList.remove("sticky_navbar");
+            }
+        }
+        window.onscroll = function() {
+            myFunction()
+        };
+    </script>
+
+    <style>
+        .sticky_navbar {
+            background-image: linear-gradient(to right, cyan, rgb(23, 44, 104), rgb(119, 17, 119), rgb(196, 133, 17));
+        }
+    </style>
 
 
-
-    <div class="conta2">
+    <div class="conta2" id="navbar">
         <nav class="navbar">
             <ul class="nav-menu">
                 <li class="nav-item active">
@@ -82,7 +81,7 @@
         var btns = btnContainer.getElementsByClassName("nav-item");
 
         for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener('click', function () {
+            btns[i].addEventListener('click', function() {
                 var current = document.getElementsByClassName("active");
                 current[0].className = current[0].className.replace(" active");
                 this.className += " active";
@@ -92,13 +91,13 @@
 
 
     <div class="social_media">
-        <div class="media"><a href=""><img src="images/instagram (1).png" height="25px" alt=""></a></div>
+        <div class="media"><a href=""><img src="images/instagram (1).png" height="20px" alt=""></a></div>
         <div class="lay"></div>
-        <div class="media"><a href=""><img src="images/linkedin.png" height="25px" alt=""></a></div>
+        <div class="media"><a href=""><img src="images/linkedin.png" height="20px" alt=""></a></div>
         <div class="lay"></div>
-        <div class="media"><a href=""><img src="images/gmail.png" height="25px" alt=""></a></div>
+        <div class="media"><a href=""><img src="images/gmail.png" height="20px" alt=""></a></div>
         <div class="lay"></div>
-        <div class="media"><a href=""><img src="images/twitter.png" height="25px" alt=""></a></div>
+        <div class="media"><a href=""><img src="images/twitter.png" height="20px" alt=""></a></div>
     </div>
 
 
@@ -174,102 +173,95 @@
 
     <div class="prj8"></div>
 
-    <div id="class2">
+    <!-- <div id="class2"></div> -->
 
+    <div class="main2_con">
 
-        <div class="main2_con">
+        <!-- <div class="blk3"></div> -->
 
-            <!-- <div class="blk3"></div> -->
+        <div class="conta3">
+            <div class="sm_con1">
+                <span class="name">>>> name( ) : AB Kiran</span>
+            </div>
+            <div class="sm_con2">
+                <div class="bar18"></div>
+                <div class="dot15"></div>
+            </div><br>
+            <div class="sm_con3">
+                <div class="bar19"></div>
+                <div class="dot16"></div>
+                <div class="bar20"></div>
+            </div>
+            <div class="sm_con4">
+                <p class="para">
+                    "Are you a project manager? Because I'd love to be your next project."
 
-            <div class="conta3">
-                <div class="sm_con1">
-                    <span class="name">>>> name( ) : AB Kiran</span>
+                    Hi there! My name is <span class="highlights">AB Kiran</span> and I am a frontend developer and Python developer.
+                    I'm currently working as an intern, but I'm always looking for new and exciting opportunities to work on.
+                    When I'm not coding, you can find me .
+                    I hope you enjoy my portfolio and feel free to reach out if you have any questions or just want to chat!
+                </p>
+            </div>
+            <div class="sm_con4">
+                <div class="bar21"></div>
+                <div class="dot17"></div>
+                <div class="bar22"></div>
+            </div><br>
+            <div class="sm_con5">
+                <div class="bar23"></div>
+                <div class="dot18"></div>
+            </div><br>
+            <div class="sm_con6">
+                <div class="bar24"></div>
+                <div class="dot19"></div>
+            </div>
+        </div>
+
+        <div class="prj3"></div>
+
+        <div class="bu">
+
+            <div class="ch_con1">
+                <div class="prof">
+                    <div class="col_lin1"></div>
+                    <div class="img1">
+                        <img src="images/web_develop.png" alt="web development symbol" height="60px" width="60px">
+                    </div>
+                    <div class="pr">
+                        <center>
+                            <p class="p1">Web Developer</p>
+                        </center>
+                    </div>
+                    <div class="col_lin2"></div>
                 </div>
-                <div class="sm_con2">
-                    <div class="bar18"></div>
-                    <div class="dot15"></div>
-                </div><br>
-                <div class="sm_con3">
-                    <div class="bar19"></div>
-                    <div class="dot16"></div>
-                    <div class="bar20"></div>
+                <div class="prof">
+                    <div class="col_lin1"></div>
+                    <div class="img2">
+                        <img src="images/web_des.png" alt="web designing symbol" height="60px" width="60px">
+                    </div>
+                    <div class="pr2">
+                        <center>
+                            <p class="p2">Web Designer</p>
+                        </center>
+                    </div>
+                    <div class="col_lin2"></div>
                 </div>
-                <div class="sm_con4">
-                    <p class="para">I am a odd man with great dreams to accomplish.
-                        for that i work as hard as i can.I am a web designer,
-                        full stack web developer,competitive coder,UI/UX designer.
-                    </p>
-                </div>
-                <div class="sm_con4">
-                    <div class="bar21"></div>
-                    <div class="dot17"></div>
-                    <div class="bar22"></div>
-                </div><br>
-                <div class="sm_con5">
-                    <div class="bar23"></div>
-                    <div class="dot18"></div>
-                </div><br>
-                <div class="sm_con6">
-                    <div class="bar24"></div>
-                    <div class="dot19"></div>
+                <div class="prof">
+                    <div class="col_lin1"></div>
+                    <div class="img3">
+                        <img src="images/com_prog.png" alt="competitive programming symbol" height="60px" width="60px">
+                    </div>
+                    <div class="pr3">
+                        <center>
+                            <p class="p3">Competitive Programmer</p>
+                        </center>
+                    </div>
+                    <div class="col_lin2"></div>
                 </div>
             </div>
 
-            <center>
-                <div class="frm3">
-
-                    <div class="prj3"></div>
-
-                </div>
-            </center>
-
-            <div class="bu">
-
-                <div class="ch_con1">
-                    <div class="prof">
-                        <div class="col_lin1"></div>
-                        <div class="img1">
-                            <img src="images/web_develop.png" alt="web development symbol" height="60px" width="60px">
-                        </div>
-                        <div class="pr">
-                            <center>
-                                <p class="p1">Web Developer</p>
-                            </center>
-                        </div>
-                        <div class="col_lin2"></div>
-                    </div>
-                    <div class="prof">
-                        <div class="col_lin1"></div>
-                        <div class="img2">
-                            <img src="images/web_des.png" alt="web designing symbol" height="60px" width="60px">
-                        </div>
-                        <div class="pr2">
-                            <center>
-                                <p class="p2">Web Designer</p>
-                            </center>
-                        </div>
-                        <div class="col_lin2"></div>
-                    </div>
-                    <div class="prof">
-                        <div class="col_lin1"></div>
-                        <div class="img3">
-                            <img src="images/com_prog.png" alt="competitive programming symbol" height="60px"
-                                width="60px">
-                        </div>
-                        <div class="pr3">
-                            <center>
-                                <p class="p3">Competitive Programmer</p>
-                            </center>
-                        </div>
-                        <div class="col_lin2"></div>
-                    </div>
-                </div>
-
-                <div class="ch_con2">
-                    <a href="https://drive.google.com/file/d/1kRqsodcGR8WYJrXaaKDlJSaWfMlOlmmG/view?usp=sharing"><button
-                            class="glow-on-hover" type="button"> my Resume</button></a>
-                </div>
-
+            <div class="ch_con2">
+                <a href="https://drive.google.com/file/d/1kRqsodcGR8WYJrXaaKDlJSaWfMlOlmmG/view?usp=sharing"><button class="glow-on-hover" type="button"> my Resume</button></a>
             </div>
 
         </div>
@@ -278,7 +270,7 @@
 
     <div class="prj10"></div>
 
-    <div id="class3"></div>
+    <!-- <div id="class3"></div> -->
 
     <div class="main3_con">
 
@@ -358,58 +350,54 @@
             </div>
 
 
-            <center>
-                <div class="rah_con2">
-                    <div class="rah_con4">
-                        <div class="frm1">
-                            <div class="prj1"></div>
-                        </div>
-                        <div class="frm2">
-                            <div class="prj2"></div>
-                        </div>
-                        <div class="stage1">
-                            <div class="pouch">
-                                <div class="card">
-                                    <div class="content">
-                                        <h2>01</h2>
-                                        <h3>project_1</h3>
-                                        <a class="lk" href="#">know more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pouch">
-                                <div class="card" id="pch">
-                                    <div class="content">
-                                        <h2>02</h2>
-                                        <h3>project_2</h3>
-                                        <a class="lk" href="#">know more</a>
-                                    </div>
+            <!-- <center> -->
+            <div class="rah_con2">
+                <div class="rah_con4">
+                    <div class="prj1"></div>
+                    <div class="prj2"></div>
+                    <div class="stage1">
+                        <div class="pouch">
+                            <div class="card">
+                                <div class="content">
+                                    <h2>01</h2>
+                                    <h3>project_1</h3>
+                                    <a class="lk" href="#">know more</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="stage2">
-                            <div class="pouch">
-                                <div class="card" id="pch">
-                                    <div class="content">
-                                        <h2>03</h2>
-                                        <h3>project_3</h3>
-                                        <a class="lk" href="#">know more</a>
-                                    </div>
+                        <div class="pouch">
+                            <div class="card" id="pch">
+                                <div class="content">
+                                    <h2>02</h2>
+                                    <h3>project_2</h3>
+                                    <a class="lk" href="#">know more</a>
                                 </div>
                             </div>
-                            <div class="pouch">
-                                <div class="card">
-                                    <div class="content">
-                                        <h2>04</h2>
-                                        <h3>project_4</h3>
-                                        <a class="lk" href="#">know more</a>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="stage2">
+                        <div class="pouch">
+                            <div class="card" id="pch">
+                                <div class="content">
+                                    <h2>03</h2>
+                                    <h3>project_3</h3>
+                                    <a class="lk" href="#">know more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pouch">
+                            <div class="card">
+                                <div class="content">
+                                    <h2>04</h2>
+                                    <h3>project_4</h3>
+                                    <a class="lk" href="#">know more</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </center>
+            </div>
+            <!-- </center> -->
 
         </div>
 
@@ -497,29 +485,29 @@
             <!-- add more bars -->
         </div>
 
-        <center>
-            <div class="abh">
-                <div class="shk1">
-                    <span>
-                        <div class="ico"><i class="fa-solid fa-phone"></i></div>
-                        <div class="details"><a href="tel:+91 7013642130">+91 7013642130</a></div>
-                    </span>
-                    <span>
-                        <div class="ico"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="details"><a href="mailto:bhargavakiran18@gmail.com">bhargavakiran18@gmail.com</a>
-                        </div>
-                    </span>
-                    <span>
-                        <div class="ico"><i class="fa-brands fa-linkedin"></i></div>
-                        <div class="details"><a href="https://www.linkedin.com/in/bhargava-kiran-17bb8221a/">linkedIn</a></div>
-                    </span>
-                    <span>
-                        <div class="ico"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="details"><a href="https://goo.gl/maps/h8w7w95UmJaVAzjX8">Visakhaptnam,Gajuwaka,Andhra Pradesh,530026</a></div>
-                    </span>
-                </div>
+        <!-- <center> -->
+        <div class="abh">
+            <div class="shk1">
+                <span>
+                    <div class="ico"><i class="fa-solid fa-phone"></i></div>
+                    <div class="details"><a href="tel:+91 7013642130">+91 7013642130</a></div>
+                </span>
+                <span>
+                    <div class="ico"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="details"><a href="mailto:bhargavakiran18@gmail.com">bhargavakiran18@gmail.com</a>
+                    </div>
+                </span>
+                <span>
+                    <div class="ico"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="details"><a href="https://www.linkedin.com/in/bhargava-kiran-17bb8221a/">linkedIn</a></div>
+                </span>
+                <span>
+                    <div class="ico"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="details"><a href="https://goo.gl/maps/h8w7w95UmJaVAzjX8">Visakhaptnam,Gajuwaka,Andhra Pradesh,530026</a></div>
+                </span>
             </div>
-        </center>
+        </div>
+        <!-- </center> -->
 
     </div>
 
@@ -536,11 +524,10 @@
 
 <script type="text/javascript" src="assets/vanilla-tilt.babel.min.js"></script>
 <script>
-
     var menu_bar = document.getElementById('menu');
     var cross = document.getElementById('del');
 
-    
+
 
     VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 20,
@@ -549,7 +536,7 @@
         speed: 400
     });
 
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('.carousel-container').slick({
             dots: true,
             slidesToShow: 1,
